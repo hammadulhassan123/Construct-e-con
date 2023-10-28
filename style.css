@@ -1,0 +1,163 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #f1fbff;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+      width: 68%;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.9;
+}
+
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+ 
+.navbar{
+    box-shadow: 0px 1px 3px 2px lightgrey ;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn{
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+.services .container{
+    padding: 3vh ;
+    box-shadow: 10px 8px 18px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.services .card-body i{
+    font-size: 45px;
+    color: #000;
+}
+#serv-card{
+    background: rgba(0, 0, 0, 0.6);
+    color: #f1fbff;
+    box-shadow: 9px 9px 15px 0px darkslategray;
+}
+#serv-card:hover{
+    background-color: rgba(255, 193, 7, 0.841);
+    color: black;
+}
+
+.team .card-body i{
+    font-size: 20px;
+}
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2);
+}
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.minicont{
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 10px 8px 18px 2px rgba(112, 128, 144, 0.15);
+
+}
+
+.contact .container{
+    border-radius: 10px;
+    box-shadow: 10px 8px 18px 2px rgba(0, 0, 0, 0.2);
+
+}
+.contact .container #ctbtn:hover{
+    background-color: rgb(243, 201, 52);
+    color: whitesmoke;
+}
+.contact .container .minicont .accordion-item{
+    border: 0.5px solid lightblue;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .img-area img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+    .about-text{
+        padding-top: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+}
